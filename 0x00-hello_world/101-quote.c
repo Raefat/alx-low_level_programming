@@ -10,13 +10,12 @@
 
 
 int main(void)
-{	char text[] = "and that piece of art is useful\" - \
-	Dora Korpar, 2015-10-19\n";
+{	char txt[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	int i;
 
-	for (i = 0; text[i] != '\0'; i++)
+	for (i = 0; txt[i] != '\0'; i++)
 	{
-		putchar(text[i]);
+		putchar(txt[i]);
 	}
 	return (1);
 }
