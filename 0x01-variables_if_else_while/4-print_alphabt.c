@@ -10,16 +10,15 @@
 
 int main(void)
 {
-	char c = 97;
+	char c;
 
-	while (c < (97 + 26))
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		if (c == 'q' || c == 'e')
 		{
 			continue;
 		}
 		putchar(c);
-		c++;
 	}
 	putchar('\n');
 	return (0);
