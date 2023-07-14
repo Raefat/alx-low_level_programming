@@ -28,7 +28,7 @@ int main(void)
 					putchar('0' + n);
 					putchar('0' + j);
 					putchar(' ');
-					putchar('0' + k + j);
+					putchar('0' + k + n);
 					putchar('0' + m);
 					if (n == 9 && j == 8 && k == 9 && m == 9)
 						break;
