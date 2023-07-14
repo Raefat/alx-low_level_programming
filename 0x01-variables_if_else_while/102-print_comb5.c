@@ -23,6 +23,8 @@ int main(void)
 			{
 				for (m = 0; m <= 9; m++)
 				{
+					if (n == 0 && j == 0 && k == 0 && m == 0)
+						break;
 					putchar('0' + n);
 					putchar('0' + j);
 					putchar(' ');
