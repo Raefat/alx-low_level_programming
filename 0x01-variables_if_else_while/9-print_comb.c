@@ -15,7 +15,8 @@ int main(void)
 	for (c = 0; c < 10; c++)
 	{
 		putchar('0' + c);
-		putchar(', ');
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
