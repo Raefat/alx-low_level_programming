@@ -17,10 +17,10 @@ int main(void)
 	{
 		for (j = n + 1; j <= 99; j++)
 		{
-			putchar(n / 10 + '0');
+			putchar((n / 10) + '0');
 			putchar((n % 10) + '0');
 			putchar(' ');
-			putchar(j / 10 + '0');
+			putchar((j / 10) + '0');
 			putchar((j % 10) + '0');
 			if (n == 99 && j == 98)
 				continue;
