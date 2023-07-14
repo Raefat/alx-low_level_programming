@@ -17,14 +17,15 @@ int main(void)
 
 	for (n = 0; n < 9; n++)
 	{
-		for (j = n + 1; j <= 9; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (k = j + 1; k <= 9; k++)
+			for (k = 0; k <= 9; k++)
 			{
-				for (m = k + 1; m <= 9; m++)
+				for (m = 0; m <= 9; m++)
 				{
 					putchar('0' + n);
 					putchar('0' + j);
+					putchar(' ');
 					putchar('0' + k);
 					putchar('0' + m);
 					if (n == 9 && j == 8 && k == 9 && m == 9)
