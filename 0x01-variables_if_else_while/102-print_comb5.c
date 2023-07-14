@@ -19,7 +19,7 @@ int main(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			for (k = j + 1; k <= 9; k++)
+			for (k = 0; k <= 9; k++)
 			{
 				for (m = 0; m <= 9; m++)
 				{
@@ -28,7 +28,7 @@ int main(void)
 					putchar('0' + n);
 					putchar('0' + j);
 					putchar(' ');
-					putchar('0' + k);
+					putchar('0' + k + j);
 					putchar('0' + m);
 					if (n == 9 && j == 8 && k == 9 && m == 9)
 						break;
