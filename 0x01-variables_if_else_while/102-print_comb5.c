@@ -26,10 +26,10 @@ int main(void)
 					if (n == 0 && j == 0 && k == 0 && m == 0)
 						continue;
 					putchar('0' + n);
-					putchar('0' + j);
+					putchar('0' + j + n + 1);
 					putchar(' ');
-					putchar('0' + k + n);
-					putchar('0' + m);
+					putchar('0' + k + n + j + 1);
+					putchar('0' + m + k + j + n + 1);
 					if (n == 9 && j == 8 && k == 9 && m == 9)
 						break;
 					putchar(',');
