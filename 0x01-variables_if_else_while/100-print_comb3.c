@@ -11,10 +11,11 @@
 int main(void)
 {
 	int n;
+	int j;
 
 	for (n = 0; n < 9; n++)
 	{
-		for (int j = n; j <= 9; j++)
+		for (j = n; j <= 9; j++)
 		{
 			putchar('0' + n);
 			putchar('0' + j);
