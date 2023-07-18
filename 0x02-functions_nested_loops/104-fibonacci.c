@@ -10,9 +10,9 @@
 
 int main(void)
 {
-	long int first = 0, second = 1;
+	unsigned long int first = 0, second = 1;
 	int i = 0;
-	long int fibo;
+	unsigned long int fibo;
 
 	while (i < 98)
 	{
