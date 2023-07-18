@@ -19,10 +19,10 @@ int main(void)
 		fibo = first + second;
 		if (i == 97)
 		{
-			printf("%ld\n", fibo);
+			printf("%lu\n", fibo);
 			break;
 		}
-		printf("%ld, ", fibo);
+		printf("%lu, ", fibo);
 		first = second;
 		second = fibo;
 		i++;
