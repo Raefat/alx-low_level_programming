@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_alphabets - function that prints alphabets
+ * print_alphabet - function that prints alphabets
  *
- * Return: 0
+ * Return: void
 */
 
-int print_alphabets(void)
+int print_alphabet(void)
 {
 	char c;
 
@@ -15,6 +15,4 @@ int print_alphabets(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-
-	return (0);
 }
