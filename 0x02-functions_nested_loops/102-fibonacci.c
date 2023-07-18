@@ -10,14 +10,19 @@
 
 int main(void)
 {
-	int first = 0, second = 1;
+	long int first = 0, second = 1;
 	int i = 0;
-	int fibo;
+	long int fibo;
 
 	while (i < 50)
 	{
 		fibo = first + second;
-		printf("%d, ", fibo);
+		if (i == 49)
+		{
+			printf("%ld\n", fibo);
+			break;
+		}
+		printf("%ld, ", fibo);
 		first = second;
 		second = fibo;
 		i++;
