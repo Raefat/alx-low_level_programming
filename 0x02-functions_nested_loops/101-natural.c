@@ -15,11 +15,11 @@ int main(void)
 
 	while (i < 1024)
 	{
-		if (i % 3)
+		if (i % 3 == 0)
 		{
 			sum += i;
 		}
-		if (i % 5)
+		if (i % 5 == 0)
 		{
 			sum += i;
 		}
