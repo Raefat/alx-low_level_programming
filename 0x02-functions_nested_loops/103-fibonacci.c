@@ -11,7 +11,7 @@
 int main(void)
 {
 	long int first = 0, second = 1;
-	long int fibo;
+	long int fibo = 0;
 	long int sum = 0;
 
 	while (fibo <= 4000000)
