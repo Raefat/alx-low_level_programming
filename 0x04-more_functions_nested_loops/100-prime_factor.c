@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program that finds and prints the largest prime factor 
+ * main - program that finds and prints the largest prime factor
  * of the number 612852475143, followed by a new line.
  * Return: 0
  */
@@ -26,6 +26,6 @@ int main(void)
 		}
 	}
 
-	printf("%ld\n", prime)
+	printf("%ld\n", prime);
 	return (0);
 }
