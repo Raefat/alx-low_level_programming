@@ -22,10 +22,12 @@ void print_diagonals(int n)
 			{
 				if (i != 1)
 					_putchar(' ');
-				if (i == j){
+				if (i == j)
+				{
 					_putchar('\\');
 					_putchar('\n');
 				}
+			}
 		}
-	}	
+	}
 }
