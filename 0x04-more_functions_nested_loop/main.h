@@ -1,9 +1,9 @@
-#ifndef
-#define
+#ifndef MAIN_H
+#define MAIH_H
 
 #include <stdio.h>
 
-void _putchar(int c);
+int _putchar(char c);
 int _isupper(int c);
 
 #endif
