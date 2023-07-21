@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <math.h>
 /**
  * print_number - function that prints an integer
  *
@@ -10,33 +10,24 @@
 
 void print_number(int n)
 {
-	int m, num = n, isNegative;
+	int num = n, numOfDivision = 0;
 
-	if (num < 0)
+	if (n < 0)
 	{
-		num *= -1;
+		n = -n;
+		num = n;
 		_putchar('-');
 	}
-	m = 1;
-	isNegative = 1;
-	while (isNegative)
+	while (n > 0)
 	{
-		if (num / (m * 10) > 0)
-			m *= 10;
-		else
-			isNegative = 0;
+		n /= 10;
+		numOfDivision++;
 	}
-	while (num >= 0)
+	while (numOfDivision > 0)
 	{
-		if (m == 1)
-		{
-			_putchar(num % 10 + '0');
-			num = -1;
-		}
-		else
-		{
-			_putchar((num / m % 10) + '0');
-			m /= 10;
-		}
+		_putchar('0' + num / (pow(10, numOfDivision - 1)));
+		num = num % ((int) pow(10, numOfDivision - 1));
+		numOfDivision--;
 	}
+	_putchar('\n');
 }
