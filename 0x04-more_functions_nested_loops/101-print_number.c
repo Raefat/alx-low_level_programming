@@ -10,8 +10,7 @@
 
 void print_number(int n)
 {
-	long m, num = n;
-	int isNegative;
+	int m, num = n, isNegative;
 
 	if (num < 0)
 	{
