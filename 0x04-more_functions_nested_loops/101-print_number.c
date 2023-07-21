@@ -10,16 +10,34 @@
 
 void print_number(int n)
 {
-	unsigned int num;
+	long m, num = n;
+	int isNegative;
 
-	if (n < 0)
+	if (num < 0)
 	{
+		num *= -1;
 		_putchar('-');
-		num = -num;
 	}
-
-	if ((num / 10) > 0)
-		print_number(num / 10);
-
-	_putchar((num % 10) + '0');
+	m = 1;
+	isNegative = 1;
+	while (isNegative)
+	{
+		if (num / (m * 10) > 0)
+			m *= 10;
+		else
+			isNegative = 0;
+	}
+	while (num >= 0)
+	{
+		if (m == 1)
+		{
+			_putchar(num % 10 + '0');
+			num = -1;
+		}
+		else
+		{
+			_putchar((num / m % 10) + '0');
+			m /= 10;
+		}
+	}
 }
