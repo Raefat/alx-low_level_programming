@@ -10,30 +10,24 @@
 
 void print_number(int n)
 {
-	int num = n, numOfDivision = 0;
+	int num = n, numOfDivision = 1;
 
-	if (n == 0)
-	{
-		_putchar('0');
-		_putchar('\n');
-		return;
-	}
 	if (n < 0)
 	{
 		n = -n;
 		num = n;
 		_putchar('-');
 	}
-	while (n > 0)
+	while (n > 10)
 	{
 		n /= 10;
-		numOfDivision++;
+		numOfDivision *= 10;
 	}
 	while (numOfDivision > 0)
 	{
-		_putchar('0' + num / (pow(10, numOfDivision - 1)));
-		num = num % ((int) pow(10, numOfDivision - 1));
-		numOfDivision--;
+		_putchar('0' + num / numOfDivision);
+		num = num % numOfDivision;
+		numOfDivision /= 10;
 	}
 	_putchar('\n');
 }
