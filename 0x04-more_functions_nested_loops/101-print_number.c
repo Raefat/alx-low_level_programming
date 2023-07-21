@@ -10,8 +10,9 @@
 
 void print_number(int n)
 {
-	int num = n, numOfDivision = 1;
+	unsigned int num, numOfDivision = 1;
 
+	num = n;
 	if (n < 0)
 	{
 		n = -n;
