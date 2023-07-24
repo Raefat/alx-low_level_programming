@@ -11,9 +11,7 @@ void print_rev(char *s)
 	char firstLetter = *s;
 
 	while (*s != '\0')
-	{
-		s = s - 1;
-	}
+		s++;
 	while (*s != firstLetter)
 	{
 		s--;
