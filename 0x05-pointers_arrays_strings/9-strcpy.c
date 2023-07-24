@@ -10,7 +10,7 @@
  * Return: character pointer
  */
 
-char *_strcpy(int *dest, int *src)
+char *_strcpy(char *dest, char *src)
 {
 	int end = 0, i;
 
@@ -18,7 +18,7 @@ char *_strcpy(int *dest, int *src)
 		end++;
 	for (i = 0; i < end; i++)
 	{
-		dest[i] = str[i];
+		dest[i] = src[i];
 	}
 	return (dest);
 }
