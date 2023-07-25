@@ -9,22 +9,31 @@
 
 int _atoi(char *s)
 {
-	int firstNumIdx = 0, lastNumIdx = 0, num = 0, ten = 1, isPositive;
+	int i, firstNumIdx = -1, lastNumIdx = -1, num = 0, ten = 1, isPositive = 1;
 
-	while (s[firstNumIdx] > '9' || s[firstNumIdx] < '0')
-		firstNumIdx++;
-
-	lastNumIdx = firstNumIdx;
-	while (s[lastNumIdx] <= '9' && s[lastNumIdx] >= '0')
-		lastNumIdx++;
-
-	isPositive = s[firstNumIdx - 1] == '-' ? 0 : 1;
-
-	while (lastNumIdx > firstNumIdx)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		lastNumIdx--;
+		if (s[i] == '-')
+			isPositive = !isPositive;
+		if (s[i] <= '9' && s[i] >= '0')
+		{
+			if (firstNumIdx == -1)
+			{
+				firstNumIdx = i;
+				lastNumIdx = i;
+			}
+			else
+				lastNumIdx = i;
+			if (s[i + 1] > '9' || s[i + 1] < '0')
+				break;
+		}
+	}
+	firstNumIdx = firstNumIdx == -1 ? 0 : firstNumIdx;
+	while (lastNumIdx >= firstNumIdx)
+	{
 		num += (s[lastNumIdx] - '0') * ten;
 		ten *= 10;
+		lastNumIdx--;
 	}
 	return (isPositive ? num : -num);
 }
