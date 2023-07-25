@@ -9,7 +9,8 @@
 
 int _atoi(char *s)
 {
-	int i, firstNumIdx = -1, lastNumIdx = -1, num = 0, ten = 1, isPositive = 1;
+	int firstNumIdx = -1, lastNumIdx = -1, isPositive = 1;
+	unsigned int i, num = 0; ten = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
