@@ -10,7 +10,7 @@
 
 char *leet(char *s)
 {
-	int i = 0, j;
+	unsigned int i = 0, j;
 	char l[] = {'a', 'e', 'o', 'l', 't'};
 	int v[] = {4, 3, 0, 1, 7};
 
