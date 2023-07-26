@@ -1,33 +1,27 @@
 #include "main.h"
 
 /**
- * cap_string - function that changes all lowercase letters
- * of a string to uppercase.
+ * leet - a function that encodes a string into 1337.
  *
  * @s: pointer to string
  *
  * Return: uppercase string
  */
 
-char *cap_string(char *s)
+char *leet(char *s)
 {
-	int i = 1;
+	int i = 0, j;
+	char l[] = {'a', 'e', 'o', 'l', 't'};
+	char v[] = {4, 3, 0, 1, 7};
 
-	if (s[0] >= 'a' && s[0] <= 'z')
-		s[0] -= 32;
 	while (s[i] != '\0')
 	{
-		if ((s[i] >= 'a' && s[i] <= 'z'))
+		for (j = 0; j < sizeof(l) / sizeof(char); j++)
 		{
-			if (s[i - 1] == ' ' || s[i - 1] == '\n' || s[i - 1] == '\t'
-				|| s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '\"'
-				|| s[i - 1] == '.' || s[i - 1] == '(' || s[i - 1] == ')'
-				|| s[i - 1] == '{' || s[i - 1] == '}' || s[i - 1] == '?'
-				|| s[i - 1] == '!')
-			{
-				s[i] -= 32;
-			}
+			if (s[i] == l[j] || s[i] == l[j] - 32)
+				s[i] = '0' + v[j];
 		}
+		i++;
 	}
 	return (s);
 }
