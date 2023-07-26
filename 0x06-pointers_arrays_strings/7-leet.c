@@ -5,7 +5,7 @@
  *
  * @s: pointer to string
  *
- * Return: uppercase string
+ * Return: leet encoded string
  */
 
 char *leet(char *s)
