@@ -13,6 +13,8 @@ char *cap_string(char *s)
 {
 	int i = 1;
 
+	if (s[0] >= 'a' && s[0] <= 'z')
+		s[0] -= 32;
 	while (s[i] != '\0')
 	{
 		if ((s[i] >= 'a' && s[i] <= 'z'))
