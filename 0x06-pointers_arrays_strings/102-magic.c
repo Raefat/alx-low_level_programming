@@ -1,11 +1,4 @@
 #include <stdio.h>
-/**
- * main - entry point
- *
- * Description: program that does something fun
- *
- * Return: 0
- */
 
 int main(void)
 {
