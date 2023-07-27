@@ -19,7 +19,7 @@ void print_number(int n)
 		num = n;
 		_putchar('-');
 	}
-	while (n > 10)
+	while (n > 9)
 	{
 		n /= 10;
 		numOfDivision *= 10;
