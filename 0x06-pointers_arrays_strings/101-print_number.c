@@ -30,5 +30,4 @@ void print_number(int n)
 		num = num % numOfDivision;
 		numOfDivision /= 10;
 	}
-	_putchar('\n');
 }
