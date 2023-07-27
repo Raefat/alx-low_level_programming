@@ -10,16 +10,25 @@
 
 void print_number(int n)
 {
+	unsigned int num, numOfDivision = 1;
+
+	num = n;
 	if (n < 0)
 	{
-		_putchar('-');
 		n = -n;
+		num = n;
+		_putchar('-');
 	}
-	if (n < 10)
-		_putchar('0' + n);
-	else
+	while (n > 10)
 	{
-		print_number(n / 10);
-		_putchar('0' + n % 10);
+		n /= 10;
+		numOfDivision *= 10;
 	}
+	while (numOfDivision > 0)
+	{
+		_putchar('0' + num / numOfDivision);
+		num = num % numOfDivision;
+		numOfDivision /= 10;
+	}
+	_putchar('\n');
 }
