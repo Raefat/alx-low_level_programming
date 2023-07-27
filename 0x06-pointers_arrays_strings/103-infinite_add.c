@@ -11,8 +11,8 @@
  * Return: char pointer
  */
 
-void infinite_add(char *n1, char *n2, char *r, int size_r)
-{	int i, len1 = 0, len2 = 0;
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+{	int len1 = 0, len2 = 0;
 	int num, tens = 0;
 
 	while (n1[len1])
