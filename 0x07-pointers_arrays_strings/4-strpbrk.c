@@ -12,9 +12,9 @@ char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i = 0, j;
 
-	while (s[i] >= '\0')
+	while (s[i])
 	{
-		for (j = 0; accept[j] >= '\0'; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (accept[j] == s[i])
 			{
