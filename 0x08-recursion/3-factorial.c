@@ -8,7 +8,7 @@
  * Return: factorial value of @s
  */
 
-int factorial(char *n)
+int factorial(int n)
 {
 	if (n == 1)
 		return (1);
