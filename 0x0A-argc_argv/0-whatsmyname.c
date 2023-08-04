@@ -3,6 +3,8 @@
 /**
  * main - entry point
  * Description: program that print its own name
+ * @argc: length of @argv
+ * @argv: pointer to array of values
  * Return: 0
  */
 
