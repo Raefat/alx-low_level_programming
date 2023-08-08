@@ -21,6 +21,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; av[i][j]; j++)
 			len++;
+		len++;
 	}
 
 	p = malloc(len + 1);
