@@ -12,7 +12,7 @@
 char *argstostr(int ac, char **av)
 {
 	char *p;
-	int len = 0, i, j;
+	int len = 0, i, j, c = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -28,12 +28,11 @@ char *argstostr(int ac, char **av)
 
 	if (p == NULL)
 		return (NULL);
-
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
-			p[j + ac * i] = av[i][j];
-		p[j + ac * i + 1] = '\n';
+			p[c++] = av[i][j];
+		p[c++] = '\n';
 	}
 	p[len] = '\0';
 	return (p);
