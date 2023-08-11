@@ -9,7 +9,7 @@
  *
  * Return: int pointer to the created array
  */
-void *malloc_checked(unsigned int b)
+int *array_range(int min, int max)
 {
 	int *array;
 	int i, size;
