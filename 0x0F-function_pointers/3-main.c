@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	op = get_op_fun(argv[2]);
+	op = get_op_func(argv[2]);
 
 	if (op ==  NULL)
 	{
