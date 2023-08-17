@@ -11,15 +11,12 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0, len = 0;
+	unsigned int i = 0, marker;
 	va_list args;
 	char *str;
-	int marker = 0;
 
-	while (format[len])
-		len++;
 	va_start(args, format);
-	while (format[i])
+	while (format[i] != NULL && format[i])
 	{
 		switch (format[i])
 		{
@@ -46,7 +43,7 @@ void print_all(const char * const format, ...)
 				marker = 1;
 				break;
 		}
-		if (i < len - 1 && marker != 1)
+		if (format[i + 1] != '\0' && marker == 0)
 			printf(", ");
 		i++;
 	}
