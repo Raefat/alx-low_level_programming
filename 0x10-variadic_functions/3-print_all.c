@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if (i < len - 1)
+		if (i < len - 2)
 			printf(", ");
 		i++;
 	}
