@@ -1,13 +1,19 @@
 #include <stdio.h>
 
 /**
- * before_main - function contructor to execute it before main
+ * before_main - contructor to execute before_main it before main
  *
  */
 
-void before_main() __attribute__((constructor));
+void before_main(void) __attribute__ ((constructor));
 
-void before_main()
+/**
+ * before_main - implementation of before_main
+ *
+ */
+
+void before_main(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
