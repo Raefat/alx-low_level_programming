@@ -2,8 +2,9 @@
 
 /**
  * add_dnodeint - add new node to a dll
- * @h: pointer to the dll
- * Return: the number of nodes
+ * @head: pointer to the dll
+ * @n: int to be added
+ * Return: new dll node
  */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
