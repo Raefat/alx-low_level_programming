@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * dlistint_len - function that returns the number of elements in a linked dlistint_t list.
+ * dlistint_len - function that returns the num of elements in a linked dll.
  * @h: pointer to the dll
  * Return: the number of nodes
  */
 
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int i = 0;
 
